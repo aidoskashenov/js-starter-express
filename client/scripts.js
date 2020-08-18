@@ -1,12 +1,12 @@
-const postDeets = async(deets) => {
-  const res = await fetch("http://localhost:5000", {
+const postDeets = async (deets) => {
+  const res = await fetch("http://localhost:5000/users/add", {
     method: "POST",
+    mode: "no-cors",
     headers: {
-      'Content-Type':'application/json'
-
-    }
-    body: JSON.stringify(deets)
-  })
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(deets),
+  });
 };
 
 document.querySelector("form").addEventListener("submit", () => {
