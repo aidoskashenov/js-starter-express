@@ -14,6 +14,29 @@
     <title>Document</title>
   </head>
   <body>
+    <form>
+      <div>
+        <label class="screen-reader-text" for="name">Name</label>
+        <input type="text" placeholder="Ur Name" id="name" data-form="name">
+      </div>
+
+      <div>
+        <label class="screen-reader-text" for="email">✉️</label>
+        <input type="email" placeholder="✉️" id="email" data-form="email">
+      </div>
+
+      <div>
+        <label class="screen-reader-text" for="fone">☎️</label>
+        <input type="tel" id="fone" placeholder="☎️" data-form="fone">
+      </div>
+
+      <div>
+        <label class="screen-reader-text" for="msg">Ur Message</label>
+        <textarea id="msg" placeholder="💬" data-form="msg"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
     <!-- 'Connect' JS to this HTML file. -->
     <script src="./scripts.js"></script>
   </body>
